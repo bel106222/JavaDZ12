@@ -78,8 +78,8 @@ public class Main {
 
     public static int[] intFactory(){
         int size = 10;
-        int min = 1;
-        int max = 100;
+        int min = 0;
+        int max = 10;
         Random random = new Random();
         return random.ints(size, min, max + 1).toArray();
     }
@@ -113,7 +113,7 @@ public class Main {
     }
 
     public static void task1() {
-        int find = getNumber("Введите целое число от 0 до 100:>");
+        int find = getNumber("Введите целое число от 0 до 10:>");
         int [] intArray = intFactory();
         System.out.print("Сгенерирован массив: ");
         for (int num : intArray) {
